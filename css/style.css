@@ -1,0 +1,779 @@
+/* Skapad av Tilda Källström 2021 */
+
+@import url('normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Playfair+Display:wght@400;500&display=swap');
+/* Playfair Display - rubriker, Lato - brödtext */
+
+html {
+    background-color: white;
+}
+body {
+     background-color: #F1F1E8;
+    max-width: 1500px;
+    margin: auto;
+    min-height: 100vh;
+}
+/*section för att få ner footer på page*/
+.nocut {
+	display: flex;
+	flex-direction: column;
+	column-width: 100%;
+	width: 100%;
+}
+/*rubriker*/
+.newsh1 {
+    color: black;
+    text-align: center;
+     text-shadow: 0px 0px 0px;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: -0.5em;
+}
+p {
+    font-family: 'Lato', Sans-serif;
+    font-weight: 300;
+    margin-top: -1em;
+    padding-top: 1em;
+    line-height: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: auto;
+    max-width: 50ch;
+
+}
+li a {
+    color: black;
+    text-decoration: none;
+}
+.meny a:hover {
+    text-decoration: underline;
+}
+.news {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 4em;
+}
+/*formulär*/
+form {
+    margin: auto;
+    max-width: 400px;
+    background-color: #F1F1E8;
+}
+label {
+    font-family: 'Lato', Sans-serif;
+
+}
+.wrap {
+    width: 100%;
+   margin: auto;
+   background-color: #F1F1E8!important;
+}
+/* sökformulär*/ 
+.vbo-intro-main, .vbo-closing-main, .vbdivsearch, .vbo-search-mainview {
+    max-width: 90%;
+   background-color: #F1F1E8!important;
+    padding: 0;
+  margin: auto;
+    left: 0;
+}
+
+/*formulär*/
+input[type=text]:focus {
+    border: none;
+  }
+input[type=text], input[type=email], select, textarea {
+    max-width: 400px;
+    min-width: 250px;
+    width: 100%;
+    padding: 12px; 
+    border: none;
+    box-sizing: border-box; 
+    resize: vertical;
+    border-bottom: solid 1px;
+    font-family: 'Lato', Sans-serif;
+    margin: auto;
+
+  }
+ 
+  /* submitknapp */
+  input[type=submit] {
+    background-color: #446677;
+    color: white;
+    font-family: 'Lato', Sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 100%;
+    cursor: pointer;
+     border: 1px solid #446677;
+     margin: auto;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #F1F1E8;
+    color: black;
+    border: 1px solid #446677;
+  }
+
+
+/* footer styling*/
+footer {
+    background-color: #446677;
+    color: black;
+    margin-bottom: -1em;
+    padding: 1em;
+    bottom: 0;
+}
+footer p {
+    max-width: 680px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: -1em;
+    margin: auto;
+    color: white;
+}
+footer h2 {
+    color: white;
+    margin-left: 0.7em;
+}
+/*widget i footer*/
+.widget2 {
+    max-width: 120px;
+    margin: auto;
+}
+.readmore:hover {
+    background-color: #38613b;
+
+}
+/*wp-element*/
+.ahbfield_service {
+	max-width: 300px!important;
+}
+.email {
+	width: 300px!important;
+}
+
+.pbSubmit {
+	margin: auto;
+	max-width: 150px;
+	margin-left: 50%;
+	border-radius: 20px;
+	background-color: #446677!important;
+	color: white!important;
+	border: 1px solid #446677;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+.pbSubmit:Hover {
+	border: 1px solid #446677;
+	background-color: whitesmoke!important;
+	color: black!important;
+}
+
+.current_page_item {
+    text-decoration: underline;
+}
+/*tillbakaknapp single.php*/
+.back {
+    min-width: 200px;
+	max-width: 400px;
+	margin: auto;
+	border-radius: 5px;
+	background-color: #446677;
+	color: white;
+	border: 1px solid #446677;
+	font-family: 'Noto Sans JP', sans-serif;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 40%;
+	margin-bottom: 3em;
+	text-decoration: none;
+}
+.back:Hover {
+	border: 1px solid #446677;
+	background-color: whitesmoke;
+	color: black;
+}
+/* göm */
+#wp-calendar {
+	display: none;
+}
+@media only screen and (max-width: 480px) {
+        .footermiddle {
+      padding-left: 1em;
+      padding-right: 1em;
+      max-width: 480px;
+      margin: auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 900px) {
+    
+      .footermiddle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 0;
+      padding-left: 1em;
+      padding-right: 1em;
+      max-width: 800px;
+      margin: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+header {
+    z-index: 10000;
+    padding: 0;
+    background-color: whitesmoke;
+    top: 0; 
+    position: fixed;
+    width: 100%;
+    max-width: 1500px;
+   
+}
+.headergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: whitesmoke;
+    max-width: 100%;
+} 
+
+    .logo {
+        width: 100px;
+        display: block;
+       margin-left: 5px;
+    }
+    .mobile {
+        float: right;
+       
+    }
+    /*meny*/
+.navbar {
+    position: fixed;
+    top: 0;
+    padding-top: 2em;
+    margin-top: -2em;
+    right: 60px;
+    background-color: #F1F1E8;
+    width: 80%;
+    height: 100%;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease;
+  }
+  .showNav {
+    transform: translateY(0);
+  }
+  
+  ul {
+    width: 80%;
+    height: 90%;
+    list-style: none;
+   display: flex;
+    flex-flow: column nowrap;
+    line-height: 60px;
+  }
+ul li a {
+    color: #003302;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+ ul li a:hover, ul li a:focus {
+    text-decoration: underline;
+  }
+             
+  .navbar .here {
+      text-decoration: underline;
+  }
+  
+  /* mobilmeny med rotation vid nedfällning av meny */
+    .lineone, .linetwo, .linethree {
+      width: 38px;
+      height: 5px;
+      border-radius: 25px;
+      background-color: black;
+      margin: 7px;
+      transition: 0.5s;
+    }
+    .change .lineone {
+      transform: rotate(-45deg) translate(-1px, 10px);
+    }
+    .change .linetwo {
+      opacity: 0;
+    }
+  
+  .change .linethree {
+  transform: rotate(45deg) translate(-5px, -19px);
+  }
+
+   h1 {
+        text-align: center;
+        color: white;
+        padding-bottom: 0.3em;
+        padding-top: 0.2em;
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 2.8em;
+        text-shadow: 3px 3px 8px #202020;
+    }
+/*nyhetsartikel-bild*/ 
+    .newsarticle img {
+        width: 100%;
+        min-width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+    /* wp element */
+    .blocks-gallery-item {
+        width: 100%;
+        min-width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+    .wp-block-image, .wp-block-image img {
+        width: 100%;
+        min-width: 70%;
+        height: 100%;
+        min-height: 70%;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 5em;
+    }
+    .wp-block-column {
+       padding-bottom: 2em; 
+    }
+    .wp-block-columns {
+        margin-bottom: 5em;
+        padding-bottom: 5em;
+    }
+  
+    .article-feature-image img {
+        width:100%;
+        max-width:650px;
+        height:auto;
+    }
+    .right .attachment-post-thumbnail, .size-post-thumbnail, .wp-post-image{
+        width:100%;
+        max-width:650px;
+        height:auto;
+    } 
+    .right img {
+        width: 100%;
+        min-width: 70%;
+        max-width: 500px;
+        margin: auto;
+    }
+.blocks-gallery-item figure img{
+    width: 100%;
+    min-width: 70%;
+    max-width: 500px;
+    margin: auto;
+}
+.wp-image-259 {
+    width: 100%;
+}
+.wp-block-cover .wp-block-cover-image {
+	max-height: 380px;
+	width: 100%;
+}
+p {
+    max-width: 50ch;
+    margin: auto;
+} 
+.newsarticle {
+      max-width: 500px;
+      margin: auto;
+      margin-top: 2em;
+      padding-top: 2em;
+  }
+  .date {
+    font-family: 'Lato', Sans-serif;
+    margin-bottom: 1.6em;
+    text-align: right;
+    font-size: 0.8em;
+   margin-left: 3em;
+}
+
+  
+  .readmore {
+    background-color:#003302;
+    color: white;
+    font-family: 'Lato', Sans-serif;
+    text-decoration: none;
+    max-width: 100px;
+    width: 100px;
+    padding: 0.5em;
+    margin-left: 40%;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+    .blocks-gallery-grid {
+        width: 100%;
+        
+    }
+    article {
+        max-width: 960px;
+        border-top: solid 1px;
+         width: 100%;
+         margin: auto;
+         margin-bottom: 1em;
+    }
+        
+    h3 {
+   
+    max-width: 540px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    margin: auto;
+        }
+  /*formulär och input*/    
+form {
+    margin: auto;
+    max-width: 350px;
+    width: 90%;
+     background-color: #F1F1E8;
+}
+input[type=text], input[type=email], select, textarea {
+    max-width: 400px; 
+    width: 100%;
+  }
+ 
+  /* submitknapp */
+  input[type=submit] {
+      background-color: #446677;
+    color: white;
+    font-family: 'Lato', Sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 100%;
+    cursor: pointer;
+     border: 1px solid #446677;
+     margin: auto;
+  }
+  /* styling för templates */
+    .grids {
+    margin-top: 2em;
+}
+.leftcolumn {
+    margin-top: 2em;
+    background-color:#e6f0e6;
+}
+.rightcolumn {
+    margin-top: 2em;
+    border-top: 1px solid;
+}
+    .newsh3 {
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 0.5em;
+        max-width: 30ch;
+    }
+.sidebar {
+    margin: 1em auto;
+    max-width: 200px;
+    font-family: 'Noto Sans JP', Sans-serif;
+    border: solid 1px;
+    padding: 1em;
+}
+.sidebar h3 {
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.sidebar p {
+    text-align: left;
+    margin: 0;
+}
+.link {
+    color: black;
+    line-height: 1.5em;
+    text-size: 1.2em;
+    margin: auto;
+    max-width: 100px;
+}
+  
+}
+
+@media only screen and (min-width: 900px) {
+  
+header {
+   background-color: whitesmoke;
+    padding: 0;
+    top: 0;
+    /*position: fixed; */
+    width: 100%;
+    max-width: 1500px;
+}
+.headergrid {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: whitesmoke;
+    max-width: 100%;
+}
+.right {
+    
+     margin-right: 2em;
+     width: 100%;
+}
+.navbar {
+    margin-top: 6em;
+    margin-bottom: -1em;
+    width: 100%;
+}
+ul {
+    margin-top: -4em;
+    margin-bottom: 10px;
+    padding-bottom: 4.5em;
+}
+  
+ul li a {
+    color: #003302;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+   
+  }
+a:hover {
+    text-decoration: underline;
+}
+li {
+    display: inline;
+   float: right;
+   margin-right: 15px;
+   font-size: 1em;
+   font-family: 'Lato', Sans-serif;
+   font-weight: 400;
+   margin-top: 2.1em;
+}
+/*styling för länk besökare befinner sig på */
+.current_page_item, .current-menu-item, .current {
+    display: inline;
+   float: right;
+   text-decoration: underline;
+   margin-right: 15px;
+   font-size: 1em;
+   font-family: 'Lato', Sans-serif;
+   font-weight: 400;
+   margin-top: 2.1em;
+}
+.current_page_item a, .current-menu-item a, .current a {
+    color: #004d00;
+}
+.meny a {
+    color: #004d00;
+    text-decoration: none;
+}
+.meny a:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 160px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    padding-bottom: 0.7em;
+    padding-top: 0.6em;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 3.5em;
+    text-shadow: 3px 3px 8px #202020;
+    font-family: 'Playfair Display', serif;
+}
+/* wp-element*/
+.wp-block-image, .wp-block-image img {
+    width: 100%;
+    min-width: 70%;
+    height: 100%;
+    min-height: 70%;
+    max-width: 500px;
+    margin: auto;
+}
+.wp-block-column {
+    max-width: 500px;
+    
+}
+.wp-block-columns {
+    margin: auto;
+    max-width: 1000px;
+    margin-top: 2em;
+}
+
+/* sökformulär*/ 
+.vbo-intro-main, .vbo-closing-main, .vbdivsearch, .vbo-search-mainview {
+ width: 400px;
+ margin: auto;
+ padding-left: 50px;
+ background: transparent!important;
+ 
+}
+.wrap {
+   width: 400px;
+    margin: auto;
+     padding-left: 50px;
+     background: transparent!important;
+     
+}
+.readmore {
+    background-color:#003302;
+    color: black;
+    font-family: 'Lato', Sans-serif;
+    text-decoration: none;
+    max-width: 100px;
+    padding: 0.5em;
+    margin: auto;
+  
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+article {
+    margin: 20px;
+    border-bottom: solid 1px;
+    
+    max-width: 880px;
+    margin: auto;
+    padding-top: 3em;
+    margin-bottom: 1em;
+}
+
+
+.date {
+    font-family: 'Lato', Sans-serif;
+    margin-bottom: 1.6em;
+    text-align: right;
+    font-size: 0.8em;
+   margin-left: 3em;
+}
+
+form {
+    margin: auto;
+    max-width: 400px;
+     background-color: #F1F1E8;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 320px; 
+    padding: 12px; 
+    border: none;
+    box-sizing: border-box; 
+    resize: vertical;
+    border-bottom: solid 1px;
+    font-family: 'Lato', Sans-serif;
+    margin: auto;
+
+  }
+ 
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    color: white;
+    font-family: 'Lato', Sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    cursor: pointer;
+  }
+.button {
+    width: 87%!important;
+}
+  .footermiddle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 0;
+      padding-left: 3em;
+      padding-right: 3em;
+      max-width: 800px;
+      margin: auto;
+  }
+  /*styling för templates*/
+  .grids {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.leftcolumn {
+    margin-top: 2em;
+    background-color:#e6f0e6;
+}
+.rightcolumn {
+    margin-top: 2em;
+}
+.newsgrid {
+    
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 3;
+      column-gap: 2em;
+      padding-left: 3em;
+      padding-right: 3em;
+      max-width: 1200px;
+      margin: auto;
+}
+.leftcol {
+    float: left;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar {
+    margin-left: 2em;
+    display: block;
+   right: 0;
+    margin-top
+    float: right;
+   font-family: 'Noto Sans JP', sans-serif;
+   border: solid 1px;
+   padding: 1em;
+   margin: 1em;
+}
+.newsh3 {
+      max-width: 40ch;
+      margin: auto;
+      font-family: 'Playfair Display', serif;
+
+}
+.sidebar h3 {
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.sidebar p {
+    text-align: left;
+    margin: 0;
+}
+.link {
+    color: black;
+    line-height: 1.5em;
+    text-size: 1.2em;
+    margin: auto;
+    max-width: 100px;
+}
+.thumbnail, .attachment-post-thumbnail {
+    max-width: 400px;
+    height: auto;
+    margin-left: 20%;
+    
+}
+
+  }

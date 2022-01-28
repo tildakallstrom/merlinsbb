@@ -1,0 +1,20 @@
+/*JS-kod skapad av Tilda Källström 2021*/
+function hamburgermenu(m) {
+    m.classList.toggle("change");
+  }
+  
+  /* mobilmeny*/
+  // variabler för navbar/hamburgarmeny
+  let navbar = document.querySelector(".navbar")
+   let ham = document.querySelector(".ham")
+   
+   // funktion för att klicka i och klicka ur meny
+   function toggleHamburger(){
+     // öppna
+     navbar.classList.toggle("showNav")
+     // stäng
+     ham.classList.toggle("showClose")
+   }
+   // eventlyssnare till click
+   ham.addEventListener("click", toggleHamburger)
+   
