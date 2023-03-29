@@ -1,9 +1,5 @@
-/* Skapad av Tilda Källström 2021 */
-
 @import url('normalize.css');
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Playfair+Display:wght@400;500&display=swap');
-/* Playfair Display - rubriker, Lato - brödtext */
 
 html {
     background-color: white;
@@ -16,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/*section för att få ner footer på page*/
 .nocut {
     display: flex;
     flex-direction: column;
@@ -24,7 +19,6 @@ body {
     width: 100%;
 }
 
-/*rubriker*/
 .newsh1 {
     color: black;
     text-align: center;
@@ -67,7 +61,6 @@ li a {
     margin-bottom: 4em;
 }
 
-/*formulär*/
 form {
     margin: auto;
     max-width: 400px;
@@ -85,7 +78,6 @@ label {
     background-color: #F1F1E8;
 }
 
-/* sökformulär*/
 .vbo-intro-main,
 .vbo-closing-main,
 .vbdivsearch,
@@ -97,7 +89,6 @@ label {
     left: 0;
 }
 
-/*formulär*/
 input[type=text]:focus {
     border: none;
 }
@@ -118,7 +109,6 @@ textarea {
     margin: auto;
 }
 
-/* submitknapp */
 input[type=submit] {
     background-color: #446677;
     color: white;
@@ -139,8 +129,6 @@ input[type=submit]:hover {
     border: 1px solid #446677;
 }
 
-
-/* footer styling*/
 footer {
     background-color: #446677;
     color: black;
@@ -163,7 +151,6 @@ footer h2 {
     margin-left: 0.7em;
 }
 
-/*widget i footer*/
 .widget2 {
     max-width: 120px;
     margin: auto;
@@ -173,7 +160,6 @@ footer h2 {
     background-color: #38613b;
 }
 
-/*wp-element*/
 .ahbfield_service {
     max-width: 300px !important;
 }
@@ -203,7 +189,6 @@ footer h2 {
     text-decoration: underline;
 }
 
-/*tillbakaknapp single.php*/
 .back {
     min-width: 200px;
     max-width: 400px;
@@ -229,7 +214,6 @@ footer h2 {
     color: black;
 }
 
-/* göm */
 #wp-calendar {
     display: none;
 }
@@ -289,7 +273,6 @@ footer h2 {
         float: right;
     }
 
-    /*meny*/
     .navbar {
         position: fixed;
         top: 0;
@@ -334,7 +317,6 @@ footer h2 {
         text-decoration: underline;
     }
 
-    /* mobilmeny med rotation vid nedfällning av meny */
     .lineone,
     .linetwo,
     .linethree {
@@ -369,7 +351,6 @@ footer h2 {
         text-shadow: 3px 3px 8px #202020;
     }
 
-    /*nyhetsartikel-bild*/
     .newsarticle img {
         width: 100%;
         min-width: 100%;
@@ -377,7 +358,6 @@ footer h2 {
         margin: auto;
     }
 
-    /* wp element */
     .blocks-gallery-item {
         width: 100%;
         min-width: 100%;
@@ -462,7 +442,6 @@ footer h2 {
         margin-left: 3em;
     }
 
-
     .readmore {
         background-color: #003302;
         color: white;
@@ -498,7 +477,6 @@ footer h2 {
         margin: auto;
     }
 
-    /*formulär och input*/
     form {
         margin: auto;
         max-width: 350px;
@@ -514,7 +492,6 @@ footer h2 {
         width: 100%;
     }
 
-    /* submitknapp */
     input[type=submit] {
         background-color: #446677;
         color: white;
@@ -529,7 +506,6 @@ footer h2 {
         margin: auto;
     }
 
-    /* styling för templates */
     .grids {
         margin-top: 2em;
     }
@@ -584,7 +560,6 @@ footer h2 {
         background-color: whitesmoke;
         padding: 0;
         top: 0;
-        /*position: fixed; */
         width: 100%;
         max-width: 1500px;
     }
@@ -637,7 +612,6 @@ footer h2 {
         margin-top: 2.1em;
     }
 
-    /*styling för länk besökare befinner sig på */
     .current_page_item,
     .current-menu-item,
     .current {
@@ -687,7 +661,6 @@ footer h2 {
         font-family: 'Playfair Display', serif;
     }
 
-    /* wp-element*/
     .wp-block-image,
     .wp-block-image img {
         width: 100%;
@@ -708,7 +681,6 @@ footer h2 {
         margin-top: 2em;
     }
 
-    /* sökformulär*/
     .vbo-intro-main,
     .vbo-closing-main,
     .vbdivsearch,
@@ -734,7 +706,6 @@ footer h2 {
         max-width: 100px;
         padding: 0.5em;
         margin: auto;
-
         margin-bottom: 0.5em;
         border-radius: 10px;
         text-align: center;
@@ -743,13 +714,11 @@ footer h2 {
     article {
         margin: 20px;
         border-bottom: solid 1px;
-
         max-width: 880px;
         margin: auto;
         padding-top: 3em;
         margin-bottom: 1em;
     }
-
 
     .date {
         font-family: 'Lato', Sans-serif;
@@ -777,10 +746,8 @@ footer h2 {
         border-bottom: solid 1px;
         font-family: 'Lato', Sans-serif;
         margin: auto;
-
     }
 
-    /* Style the submit button with a specific background color etc */
     input[type=submit] {
         color: white;
         font-family: 'Lato', Sans-serif;
@@ -805,7 +772,6 @@ footer h2 {
         margin: auto;
     }
 
-    /*styling för templates*/
     .grids {
         width: 100%;
         display: grid;
@@ -822,7 +788,6 @@ footer h2 {
     }
 
     .newsgrid {
-
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 3;
@@ -844,7 +809,7 @@ footer h2 {
         margin-left: 2em;
         display: block;
         right: 0;
-        margin-top float: right;
+        float: right;
         font-family: 'Noto Sans JP', sans-serif;
         border: solid 1px;
         padding: 1em;
@@ -855,7 +820,6 @@ footer h2 {
         max-width: 40ch;
         margin: auto;
         font-family: 'Playfair Display', serif;
-
     }
 
     .sidebar h3 {
@@ -871,7 +835,6 @@ footer h2 {
     .link {
         color: black;
         line-height: 1.5em;
-        text-size: 1.2em;
         margin: auto;
         max-width: 100px;
     }
@@ -881,7 +844,6 @@ footer h2 {
         max-width: 400px;
         height: auto;
         margin-left: 20%;
-
     }
 
 }
