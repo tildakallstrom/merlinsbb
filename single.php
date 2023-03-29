@@ -17,6 +17,6 @@
       ?>
       <a class="back" href="https://aangens.tildakallstrom.se/news/">Back <<< /a><br>
 </section>
-<?php endwhile; 
- endif; 
+<?php endwhile;
+  endif;
   get_footer(); ?>
